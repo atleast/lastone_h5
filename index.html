@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script language="JavaScript" src="js/play.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Lastone</title>
+
+</head>
+
+<body onload="layout('stone',3),layout('head',5),layout('qr',7);">
+<p>Hello, BABY! Welcome to last one playground!</p>
+<p>Last one is a small game which is played by the following rules:</p>
+<p>1. One or more stone can be removed from ONLY one group.</p>
+<p>2. Stones in two or more groups can NOT be removed at the same time.</p>
+
+    <div id="stone" align="center"></div>
+    <div id="head" align="center"></div>
+    <div id="qr" align="center"></div>
+
+    <div class="turn">
+        <input type="radio" name="turn" align="center" value="PlayerOne" onchange="turnOver();" checked>Player One
+        <input type="radio" name="turn" align="center" value="PlayerTwo" onchange="turnOver();"> Player Two
+    </div>
+
+
+</body>
+</html>
